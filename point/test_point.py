@@ -35,7 +35,7 @@ class PointTests(unittest.TestCase):
         self.assertFalse(p1 == p3)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_shifting(self):
         p1 = Point(1, 2, 3)
         p2 = Point(4, 5, 6)
@@ -45,7 +45,7 @@ class PointTests(unittest.TestCase):
         self.assertEqual((p4.x, p4.y, p4.z), (p2.x, p2.y, p2.z))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_scale(self):
         p1 = Point(1, 2, 3)
         p2 = p1 * 2
@@ -54,7 +54,7 @@ class PointTests(unittest.TestCase):
         self.assertEqual((p3.x, p3.y, p3.z), (3, 6, 9))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_iterable_point(self):
         point = Point(x=1, y=2, z=3)
         x, y, z = point
