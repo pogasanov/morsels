@@ -25,7 +25,7 @@ def record_calls(func):
             wrapper.calls.append(Call(args, kwargs, NO_RETURN, e))
             raise e
 
-        wrapper.calls.append(Call(args, kwargs, result, None))
+        wrapper.calls.append(Call(args, kwargs, result))
         return result
 
     wrapper.calls = []
