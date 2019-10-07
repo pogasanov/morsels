@@ -1,13 +1,14 @@
 from dataclasses import dataclass
 from functools import wraps
+from typing import Any, Union
 
 
 @dataclass
 class Call:
     args: tuple
     kwargs: dict
-    return_value: any
-    exception: any
+    return_value: Any
+    exception: Union[Exception, None] = None
 
 
 NO_RETURN = object
