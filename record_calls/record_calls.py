@@ -2,16 +2,15 @@ from dataclasses import dataclass
 from functools import wraps
 from typing import Any, Optional
 
+NO_RETURN = object()
+
 
 @dataclass
 class Call:
     args: tuple
     kwargs: dict
-    return_value: Any
+    return_value: Any = NO_RETURN
     exception: Optional[Exception] = None
-
-
-NO_RETURN = object()
 
 
 def record_calls(func):
@@ -22,10 +21,10 @@ def record_calls(func):
         try:
             result = func(*args, **kwargs)
         except Exception as e:
-            wrapper.calls.append(Call(args, kwargs, NO_RETURN, e))
+            wrapper.calls.append(Call(args, kwargs, exception=e))
             raise e
 
-        wrapper.calls.append(Call(args, kwargs, result))
+        wrapper.calls.append(Call(args, kwargs, return_value=result))
         return result
 
     wrapper.calls = []
