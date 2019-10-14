@@ -11,7 +11,7 @@ class Call:
     exception: Union[Exception, None] = None
 
 
-NO_RETURN = object
+NO_RETURN = object()
 
 
 def record_calls(func):
