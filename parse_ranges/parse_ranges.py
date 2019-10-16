@@ -8,5 +8,4 @@ def parse_ranges(input_string):
             if b == '>exit':
                 yield int(a)
             else:
-                for x in range(int(a), int(b) + 1):
-                    yield x
+                yield from range(int(a), int(b) + 1)
