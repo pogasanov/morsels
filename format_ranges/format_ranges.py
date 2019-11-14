@@ -8,7 +8,7 @@ def format_ranges(initial):
     sorted_list = sorted(initial)
     c = Counter(sorted_list)
     while c:
-        for item, count in c.items():
+        for item in c.keys():
             if not start:
                 start = item
                 it = item
