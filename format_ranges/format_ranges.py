@@ -3,7 +3,7 @@ from collections import Counter
 
 def format_ranges(initial):
     start = None
-    it = None
+    end = None
     result = []
     sorted_list = sorted(initial)
     c = Counter(sorted_list)
@@ -11,12 +11,12 @@ def format_ranges(initial):
         for item in c.keys():
             if not start:
                 start = item
-                it = item
+                end = item
             else:
-                if item == it + 1:
-                    it = item
-        result.append((start, it))
-        c.subtract({k: 1 for k in range(start, it + 1)})
+                if item == end + 1:
+                    end = item
+        result.append((start, end))
+        c.subtract({k: 1 for k in range(start, end + 1)})
         start = None
         c += Counter()
     result.sort()
