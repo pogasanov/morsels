@@ -13,9 +13,7 @@ def format_ranges(initial):
                 start = item
                 it = item
             else:
-                if item != it + 1:
-                    break
-                else:
+                if item == it + 1:
                     it = item
         result.append((start, it))
         c.subtract({k: 1 for k in range(start, it + 1)})
