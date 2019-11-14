@@ -28,19 +28,19 @@ class FormatRangesTests(unittest.TestCase):
         )
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_lone_numbers(self):
         self.assertEqual(format_ranges([1]), '1')
         self.assertEqual(format_ranges([4, 16, 18]), '4,16,18')
         self.assertEqual(format_ranges([1, 10, 11, 12, 13, 14]), '1,10-14')
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_unordered_numbers(self):
         self.assertEqual(format_ranges([10, 20, 12, 3, 11]), '3,10-12,20')
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_duplicate_numbers(self):
         self.assertEqual(
             format_ranges([10, 20, 10, 12, 11, 20]),
