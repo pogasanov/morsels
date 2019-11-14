@@ -2,16 +2,14 @@ from collections import Counter
 
 
 def format_ranges(initial):
-    start = None
-    end = None
+    start = end = None
     result = []
     sorted_list = sorted(initial)
     c = Counter(sorted_list)
     while c:
         for item in c.keys():
             if not start:
-                start = item
-                end = item
+                start = end = item
             else:
                 if item == end + 1:
                     end = item
