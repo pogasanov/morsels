@@ -34,7 +34,7 @@ class FuzzyStringTests(unittest.TestCase):
         self.assertEqual(repr(hello), repr("heLlO"))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_other_string_comparisons(self):
         apple = FuzzyString("Apple")
         self.assertGreater(apple, "animal")
@@ -49,7 +49,7 @@ class FuzzyStringTests(unittest.TestCase):
         self.assertFalse("animal" >= apple)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_string_operators(self):
         hello = FuzzyString("heLlO")
         self.assertEqual(hello + "!", "helLo!")
@@ -59,7 +59,7 @@ class FuzzyStringTests(unittest.TestCase):
         self.assertNotIn("He!", hello)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_normalizes_strings(self):
         string = FuzzyString("\u00df and ss")
         self.assertEqual(string, "ss and \u00df")
