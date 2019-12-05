@@ -23,7 +23,7 @@ class MeetupDateTests(unittest.TestCase):
         self.assertEqual(meetup_date(2016, 2), datetime.date(2016, 2, 25))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_allow_week_and_weekday_to_be_specified(self):
         # Fourth Thursday
         self.assertEqual(
@@ -52,7 +52,7 @@ class MeetupDateTests(unittest.TestCase):
         )
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_allow_specifying_from_end_of_month(self):
         # Last Thursday
         self.assertEqual(
@@ -81,7 +81,7 @@ class MeetupDateTests(unittest.TestCase):
         )
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_add_Weekday_object(self):
         from meetup_date import Weekday
         # First Monday
