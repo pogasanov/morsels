@@ -51,7 +51,7 @@ class AliasTests(unittest.TestCase):
         self.assertIs(thing.one, thing.two, my_list)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_attribute_unwritable_by_default(self):
         class Thing:
             one = 4
@@ -64,7 +64,7 @@ class AliasTests(unittest.TestCase):
         self.assertEqual(thing.two, 4)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_writable_attribute(self):
         class Thing2:
             blue = alias('red', write=True)
@@ -77,7 +77,7 @@ class AliasTests(unittest.TestCase):
         self.assertIs(thing2.blue, thing2.red)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_attribute_mirrored_on_class(self):
         class Thing:
             one = 4
