@@ -42,7 +42,7 @@ class InterleaveTests(unittest.TestCase):
         self.assertIterableEqual(interleave(in1, in2), out)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_response_is_iterator(self):
         in1 = [1, 2, 3]
         in2 = [4, 5, 6]
@@ -57,7 +57,7 @@ class InterleaveTests(unittest.TestCase):
         self.assertEqual(next(iterator), next(iterator))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_more_than_two_arguments(self):
         in1 = [1, 2, 3]
         in2 = [4, 5, 6]
@@ -66,7 +66,7 @@ class InterleaveTests(unittest.TestCase):
         self.assertIterableEqual(interleave(in1, in2, in3), out)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_different_length_lists(self):
         in1 = [1, 2, 3]
         in2 = [4, 5, 6, 7, 8]
