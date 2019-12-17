@@ -1,5 +1,4 @@
 # alias
-##### Assigned from Advanced Level on 12/09/2019
 
 Hello!
 

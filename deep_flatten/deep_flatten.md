@@ -1,5 +1,4 @@
 # deep_flatten
-##### Assigned from Advanced Level on 10/21/2019
 
 Hey there,
 

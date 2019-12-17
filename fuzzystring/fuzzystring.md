@@ -1,5 +1,4 @@
 # FuzzyString
-##### Assigned from Advanced Level on 11/18/2019
 
 Hello!
 

@@ -1,5 +1,4 @@
 # interleave
-##### Assigned from Advanced Level on 12/16/2019
 
 Hello!
 

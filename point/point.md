@@ -1,5 +1,4 @@
 # Point
-##### Assigned from Intermediate Level on 09/30/2019
 
 Hiya!
 

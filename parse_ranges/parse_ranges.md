@@ -1,5 +1,4 @@
 # parse_ranges
-##### Assigned from Advanced Level on 10/14/2019
 
 Hi!
 

@@ -1,5 +1,4 @@
 # format_ranges
-##### Assigned from Advanced Level on 11/11/2019
 
 Hello!
 

@@ -1,5 +1,4 @@
 # suppress
-##### Assigned from Advanced Level on 10/28/2019
 
 Hey!
 

@@ -1,5 +1,4 @@
 # tags_equal
-##### Assigned from Advanced Level on 11/04/2019
 
 Hey friend!
 

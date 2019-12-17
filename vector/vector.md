@@ -1,5 +1,4 @@
 # Vector
-##### Assigned from Advanced Level on 12/02/2019
 
 Hello!
 
