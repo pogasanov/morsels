@@ -293,5 +293,3 @@ Note that we're creating those exception and return_value attributes on our obje
 Our Call object now defaults return_value to NO_RETURN and exception to None. We then assign those values manually as appropriate.
 
 I hope you got some good practice with decorators this week!
-
-![](https://python.matomo.cloud/piwik.php?idsite=1&rec=1&bots=1&e_c=exercises&e_a=solutionEmailOpened&uid=pogasanov%40gmail.com)
