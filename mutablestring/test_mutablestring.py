@@ -78,7 +78,7 @@ class MutableStringTests(unittest.TestCase):
         self.assertFalse(hiya.endswith(('i', 'e')))
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_assigning_and_deleting_slices(self):
         greeting = MutableString("hiya")
         greeting[-3:] = "ey!"
@@ -89,7 +89,7 @@ class MutableStringTests(unittest.TestCase):
         self.assertEqual(greeting, "y")
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_correct_type_returned(self):
         hiya = MutableString("hiya")
         self.assertIs(type(hiya[-3]), MutableString)
@@ -103,7 +103,7 @@ class MutableStringTests(unittest.TestCase):
         self.assertIs(type(hiya.lower()), MutableString)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_append_insert_and_pop(self):
         greeting = MutableString("hey")
         greeting.append("!")
