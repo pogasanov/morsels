@@ -61,7 +61,7 @@ class FancyReaderTests(unittest.TestCase):
         self.assertEqual(list(my_file), ["4,5,6\r\n"])
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_row_iterability_and_string_representation(self):
         text = "1,2,3\n4,5,6"
         reader = FancyReader(text.splitlines(), fieldnames=['a', 'b', 'c'])
@@ -71,7 +71,7 @@ class FancyReaderTests(unittest.TestCase):
         self.assertEqual(repr(rows[0]), "Row(a='1', b='2', c='3')")
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_no_fieldnames_specified(self):
         # Test fieldnames argument
         my_file = StringIO("a,b,c\r\n1,2,3\r\n4,5,6\r\n")
@@ -85,7 +85,7 @@ class FancyReaderTests(unittest.TestCase):
         self.assertEqual(rows[1].c, '6')
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_line_num(self):
         text = "a,b,c\n1,2,3\n4,5,6"
         # Reader with fieldnames
