@@ -35,7 +35,7 @@ class CyclicListTests(unittest.TestCase):
         self.assertEqual(next(i2), 2)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_length_append_and_pop(self):
         numbers = CyclicList([1, 2, 3])
         self.assertEqual(len(numbers), 3)
@@ -44,7 +44,7 @@ class CyclicListTests(unittest.TestCase):
         self.assertEqual(numbers.pop(0), 1)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_supports_indexing(self):
         numbers = CyclicList([1, 2, 3, 4])
         self.assertEqual(numbers[2], 3)
@@ -55,7 +55,7 @@ class CyclicListTests(unittest.TestCase):
         self.assertEqual(numbers[1], 0)
 
     # To test the Bonus part of this exercise, comment out the following line
-    @unittest.expectedFailure
+    # @unittest.expectedFailure
     def test_slice(self):
         numbers = CyclicList([1, 2, 3, 4, 5])
         self.assertEqual(numbers[:7], [1, 2, 3, 4, 5, 1, 2])
